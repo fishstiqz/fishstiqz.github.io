@@ -1,0 +1,29 @@
+<div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <div id="post-info">
+    <div id="cover-photo-container">
+      <img id="cover-photo" src="/images/{{ page.cover }}">
+    </div>
+    <div id="info-container">
+      <h1 id="title">{{ page.title }}</h1>
+      <span id="date">{{ page.date | date_to_string }}</span>
+    </div>
+  </div>
+
+  <div class="post">
+    {{ content }}
+  </div>
+  <div class="colophon">
+    <p>
+      <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
+      <span id="social">
+        <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a><span class="separator">&bull;</span>
+        <!--
+        <span class="monospace"><a href="{{ site.gpg_keyfile }}">{{ site.gpg_fingerprint1 }} {{ site.gpg_fingerprint2 }}</a></span> -->
+        <a href="{{ site.gpg_keyfile }}">PGP</a> <span class="monospace">{{ site.gpg_fingerprint1 }} {{ site.gpg_fingerprint2 }}</span>
+      </span> 
+    </p>
+  </div>
+</div>
