@@ -8,5 +8,5 @@ categories: posts
 
 ## Nothing here yet 
 
-There is nothing on this blog yet, maybe sometme.
+There is nothing on this blog yet, maybe sometime.
 
